@@ -1,12 +1,10 @@
 package br.com.lucasbertoloto.personapi.entity;
 
 import lombok.*;
-import org.hibernate.Hibernate;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
-import java.util.Objects;
 
 @Entity
 @Getter
@@ -30,7 +28,7 @@ public class Person {
     @Column(nullable = false, unique = true)
     private String cpf;
 
-    private LocalDate birthDate;
+    private Date birthDate;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE})
     @ToString.Exclude
