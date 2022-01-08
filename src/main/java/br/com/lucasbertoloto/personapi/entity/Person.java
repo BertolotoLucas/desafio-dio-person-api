@@ -3,7 +3,7 @@ package br.com.lucasbertoloto.personapi.entity;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -28,7 +28,7 @@ public class Person {
     @Column(nullable = false, unique = true)
     private String cpf;
 
-    private Date birthDate;
+    private LocalDate birthDate;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE})
     @ToString.Exclude
