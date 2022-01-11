@@ -13,7 +13,7 @@ public final class TestsConstants {
     public static final String DEFAULT_PERSON_FIRST_NAME = "Lucas";
     public static final String DEFAULT_PERSON_LAST_NAME = "Bertoloto";
     public static final String DEFAULT_PERSON_CPF = "30214085082";
-    public static final LocalDate DEFAULT_PERSON_BIRTH_DATE = LocalDate.of(1999, 2, 17);
+    public static final LocalDate DEFAULT_PERSON_BIRTH_DATE = LocalDate.of(1999,2,17);
     public static final List<Phone> DEFAULT_PERSON_PHONES = generateDefaultsPhones();
 
     public TestsConstants() {}
